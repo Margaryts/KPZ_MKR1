@@ -17,7 +17,11 @@ namespace Task5
 
         public override string OuterHTML => Text;
         public override string InnerHTML => Text;
-       
+
+        public override void Render(StringBuilder sb)
+        {
+            sb.Append(Text);
+        }
     }
 
 }

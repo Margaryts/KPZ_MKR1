@@ -10,5 +10,8 @@ namespace Task5
     {
         public abstract string OuterHTML { get; }
         public abstract string InnerHTML { get; }
+
+        public abstract void Render(StringBuilder sb);
+
     }
 }
