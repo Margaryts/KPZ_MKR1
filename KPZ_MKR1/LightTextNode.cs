@@ -17,6 +17,7 @@ namespace Task5
 
         public override string OuterHTML => Text;
         public override string InnerHTML => Text;
+       
     }
 
 }
