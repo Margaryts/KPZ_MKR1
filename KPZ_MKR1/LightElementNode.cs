@@ -22,6 +22,7 @@ namespace Task5
         public virtual void OnInserted() => Console.WriteLine($"{TagName} inserted.");
         public virtual void OnClassListApplied() => Console.WriteLine($"{TagName} classes applied: {string.Join(", ", CssClasses)}");
 
+        public override void Accept(ILightNodeVisitor visitor) => visitor.Visit(this);
 
         public override void Render(StringBuilder sb)
         {

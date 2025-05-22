@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KPZ_MKR1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Task5
         public abstract string InnerHTML { get; }
 
         public abstract void Render(StringBuilder sb);
+        public abstract void Accept(ILightNodeVisitor visitor);
 
     }
 }
